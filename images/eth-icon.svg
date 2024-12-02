@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="60px" viewBox="0 0 39 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Ethereum_logo_2014</title>
+    <g id="USDC-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="usdc-2022-Eth" transform="translate(-546.000000, -891.000000)" fill-rule="nonzero">
+            <g id="usdc-chart-eth" transform="translate(165.000000, 795.000000)">
+                <g id="Ethereum_logo_2014" transform="translate(381.000000, 96.000000)">
+                    <polygon id="Path" fill="#4E4763" points="19.4275106 0 19 1.35262781 19 40.6027546 19.4275106 41 39 30.2305197"></polygon>
+                    <polygon id="Path" fill="#8A849C" points="19 0 0 30.2304147 19 41 19 21.9492289"></polygon>
+                    <polygon id="Path" fill="#3D3652" points="19.2308796 44.9006211 19 45.1774623 19 59.3365905 19.2308796 60 38 34"></polygon>
+                    <polygon id="Path" fill="#8A849C" points="19 60 19 44.9006211 0 34"></polygon>
+                    <polygon id="Path" fill="#1F1A30" points="19 41 38 30.2592396 19 22"></polygon>
+                    <polygon id="Path" fill="#3D3652" points="0 30.2592396 19 41 19 22"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
