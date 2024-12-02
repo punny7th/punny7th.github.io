@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body header.mobile {
+  top: 53px;
+}
+
+@media (min-width: 992px) {
+  .menu-link {
+    color: #2272ff;
+  }
+  .menu-link.nav-dropdown-caret::after {
+    background-image: url(images/caret-licorice700.svg) !important;
+  }
+  .footer .nav-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+.nav-button-d,
+.button.licorice-700-clear {
+  color: #5e3fb9 !important;
+  border: 1.5px solid #5e3fb9 !important;
+  border-radius: 50px;
+  font-size: 12px !important;
+}
+
+.button.licorice-700-clear:hover {
+  background-color: #5e3fb9;
+}
+
+header.header .nav-secondary-links {
+  color: #29233b !important;
+  border-bottom: 1.5px solid #2272ff !important;
+  font-size: 12px !important;
+}
+
+header.header .desktop-header-container .main-navigation .menu-list .menu-link:hover {
+  color: #5e3fb9 !important;
+}
+
+.button.clear-dark {
+  border-radius: 50px;
+}
+
+.eurc-hero .hero-img-container img.eurc-hero-img {
+  left: 0px !important;
+}
+
+.eurc-hero .hero-content {
+  padding-bottom: 0px !important;
+}
+
+.eurc-hero-bg {
+  background-image: url(images/header_bg.jpg) !important;
+  /* background: #B2B5E0 !important; */
+}
+
+.hs-form .hs-input[type="text"] {
+  background: #fff !important;
+}
+
+.hs-form .hs-input[type="email"],
+textarea {
+  background: #fff !important;
+}
+
+/*h2{
+  color: #2272FF !important;
+}*/
+
+#about {
+  background: #fff;
+}
+
+#about .img_coin {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.subtitle {
+  color: #2272ff;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+a.standalone-link:not(.button) {
+  color: #2272ff;
+  font-weight: 400;
+}
+
+
+.valueprop-card {
+  background: linear-gradient(
+      0deg,
+      hsla(0, 0%, 100%, 0.7),
+      hsla(0, 0%, 100%, 0.7)
+    ),
+    linear-gradient(310deg, #e3d5fe -3.7%, #e3e0e3 64.28%) !important;
+  border: 5px solid rgba(105, 53, 156, 0.75) !important;
+}
+
+.footer {
+  /* background-color: #5e3fb9; */
+  background: url(images/footer_bg.jpg) no-repeat;
+  background-position: center 85%;
+  background-size: cover;
+}
+
+.footer .careers-hire-label {
+  border-radius: 88px;
+  background: var(
+    --Gradients-Apple-Bright,
+    linear-gradient(90deg, #5e3fb9 0%, #2272ff 100%)
+  );
+  display: inline-block;
+  padding: 0px 7px;
+  color: #fff;
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-left: 4px;
+  top: -1px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer .nav-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+a {
+  color: #69359c;
+}
+/* .header--linkout {
+  background-color: #69359c !important;
+} */
+
+.hs-form .hs-submit .hs-button {
+  background-color: transparent;
+  color: #5e3fb9 !important;
+  border: 1.5px solid #5e3fb9 !important;
+  border-radius: 50px;
+  font-size: 12px !important;
+}
+
+.hs-form .hs-submit .hs-button:hover {
+  background-color: #5e3fb9;
+  color: #fff !important;
+}
+
+.footer .nav-item a,
+.dark-mode p,
+.footer-social-icon-link {
+  color: #fff !important;
+}
+
+.usdc-section-bg {
+  background: linear-gradient(
+    0deg,
+    #f2f2fe 75.41%,
+    rgba(242, 242, 254, 0) 98.76%
+  );
+}
+
+.usdc-section .usdc-img-container {
+  position: relative;
+}
+
+.usdc-section img.usdc-cluster {
+  left: -12px;
+  max-width: 675px !important;
+  position: relative;
+}
+
+.usdc-section img.usdc-cluster-m {
+  display: none;
+}
+
+.usdc-section .usdc-section-valueprop-row {
+  margin-top: 32px;
+}
+
+.usdc-section .usdc-section-valueprop-col {
+  margin-bottom: 32px;
+  padding-right: 16px;
+}
+
+.usdc-section .usdc-section-valueprop-col h4 {
+  color: #5e3fb9;
+}
+
+.eurc-valueprops-bg {
+  /* background: #5e3fb9 !important; */
+  background: transparent !important;
+  position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: rgba(41, 35, 59, 0.4) url(images/tech_bg2.jpg) no-repeat center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.valueprop-card .card-maincontent {
+  display: flex;
+  padding: 32px 24px !important;
+}
+
+.valueprop-card .valueprop-icon {
+  margin-right: 24px;
+}
+
+.value-prop-content h3 {
+  color: #5e3fb9;
+  font-size: 24px;
+}
+
+/* .eurc-usecase-bg {
+  background: linear-gradient(
+    0deg,
+    #f2f2fe 75.41%,
+    rgba(242, 242, 254, 0) 98.76%
+  ) !important;
+} */
+
+.solutions-valueprops .valueprop-intro {
+  margin-bottom: 0px !important;
+}
+
+.eurc-usecase-tabs .eurc-usecase-tab-nav-selector {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.solutions-card.card-cross-border {
+  width: 350px;
+  height: 100%;
+  margin: 10px 16px 0;
+  /* filter: drop-shadow(0px 4.006px 84.117px rgba(0, 0, 0, 0.11)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/card-bg-crossborder-hover.webp);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.solutions-card.card-dollar-access {
+  width: 350px;
+  height: 100%;
+  margin: 10px 16px 0;
+  /* filter: drop-shadow(0px 4.006px 84.117px rgba(0, 0, 0, 0.11)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/card-bg-dollaraccess-hover.webp);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.solutions-card.card-crypto-capital {
+  width: 350px;
+  height: 100%;
+  margin: 10px 16px 0;
+  /* filter: drop-shadow(0px 4.006px 84.117px rgba(0, 0, 0, 0.11)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/card-bg-cryptocapital-hover.webp);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+
+.solutions-card {
+  border-radius: 10px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.solutions-card .card-maincontent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 16px 16px 16px 32px;
+}
+
+.solutions-card .solutions-card-cta {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.solutions-card .solutions-card-cta .cta-text {
+  color: #5e3fb9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  line-height: 105%;
+  margin-right: 10px;
+}
+
+.solutions-content h4 {
+  color: #5e3fb9 !important;
+}
+
+.solutions-card a.solutions-card-link {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#faq video {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .solutions-card {
+    display: flex;
+    flex-direction: column !important;
+    margin: 10px 0px 0 !important;
+    min-height: 220px;
+  }
+  #faq iframe {
+    width: 100%;
+  }
+}
+
+/* arrows */
+
+.accordion-heading-button:after {
+  background-image: url(images/caret-jelly400.svg) !important;
+}
+
+.tech_logos img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  max-width: 80%;
+  /* padding: 15px; */
+  object-fit: scale-down;
+}
+
+/* News */
+
+#news h2 {
+  font-size: 44.64px;
+  font-weight: 700;
+  color: #29233b;
+  padding-bottom: 10px !important;
+}
+#news a {
+  text-decoration: none;
+}
+
+#news p {
+  font-size: 12px;
+}
+
+#news .btn-1 {
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 12px;
+  color: #5e3fb9;
+  border: 1.5px solid #5e3fb9;
+  margin: 5px auto;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+#news img {
+  width: 200px !important;
+  object-fit: contain;
+}
+
+.services-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  margin: 8px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 150px;
+  border: 1px solid #ccc;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-box-front {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.flip-box-back {
+  background-color: #ffffff;
+  color: #000;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+/* Tooltip */
+#tooltiptext,#tooltiptext2 {
+  background: #2272ff;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 50px;
+  display: none;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+
+#tooltiptext[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+
+
+#tooltiptext[data-show] {
+  display: block;
+}
+
+
+#arrow2,
+#arrow2::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow2 {
+  visibility: hidden;
+}
+
+#arrow2::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+
+#tooltiptext2[data-popper-placement^='bottom'] > #arrow2 {
+  top: -4px;
+}
+
+
+#tooltiptext2[data-show] {
+  display: block;
+}
