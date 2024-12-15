@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Neo-Banking" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./css/app.min.css" rel="stylesheet" />
+  <title>CashCrossBorders</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <article>
+    <header class="d-block d-md-none" id="mobile_header">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="/"><img src="./images/logo.png" height="60px" alt="Logo" /></a>
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+          </button>
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav ms-auto d-flex align-items-start align-items-md-center">
+              <li class="nav-item w-100">
+                <a class="nav-link fw-bold d-flex justify-content-between w-100" href="/">Personal Banking <i
+                    class="fas fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item w-100">
+                <a class="nav-link fw-bold d-flex justify-content-between w-100" href="/">Business Banking <i
+                    class="fas fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rewards">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-title="Launching Soon">Terms | Privacy</a>
+              </li>
+              <li class="nav-item mx-auto">
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Launching Soon"
+                  class="nav-link d-flex align-items-center"
+                  style="line-height: 1; border: 1px solid #44449b; padding: 5px 10px; border-radius: 15px;"><i
+                    class="far fa-user fa-lg me-2"></i>Log in to<br />Online Banking</a>
+              </li>
+              <li class="nav-item d-flex">
+                <a href="/" class="nav-link"><img src="images/usa.png" alt=""></a>
+                <a href="/uk" class="nav-link"><img src="images/uk.png" alt=""></a>
+              </li>
+            </ul>
+            <!-- Links -->
+          </div>
+          <!-- Collapsible content -->
+        </div>
+      </nav>
+      <!--/.Navbar-->
+    </header>
+
+    <header class="d-none d-md-block" id="desktop_header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="./images/logo.png" height="60px" alt="Logo" /></a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto d-flex align-items-center">
+              <li class="nav-item me-3">
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Launching Soon" class="nav-link fw-bold">Personal
+                  Banking</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Launching Soon" class="nav-link fw-bold">Business
+                  Banking</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled mb-0 ms-auto d-flex align-items-center">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#rewards">Rewards</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Launching Soon"
+                  class="nav-link d-flex align-items-center" style="line-height: 1;"><i
+                    class="far fa-user fa-lg me-2"></i>Log in to<br />Online Banking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section id="intro" class="pt-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12" data-aos="fade-up">
+              <h1>
+                Experience<br />the power of<br /><span>Next-Gen Banking</span>
+              </h1>
+              <a href="#" class="btn btn-1">Launching Soon</a>
+              <h5 class="fs-3 fw-bold">Secure and easy to use banking with next-to-zero fees <br
+                  class="d-none d-md-block" />and full privacy
+                controls in your hands!
+              </h5>
+              <p class="fs-4 my-3" style="color: #44449b;">Take control of your banking with CashCrossBorders and <br
+                  class="d-none d-md-block" />open a
+                USA FDIC full-reserve bank today!</p>
+              <p class="fs-4 my-3" style="color: #44449b;">CashCrossBorders, a safe and sustainable full-reserve
+                banking business model<br class="d-none d-md-block" /> without the risks
+                and vulnerabilities of legacy fractional-reserve banking.<br class="d-none d-md-block" /> All bank
+                accounts are FDIC insured up to
+                $250,000.
+              </p>
+              <div class="d-flex justify-content-center align-items-center mb-3">
+                <h5 class="fs-3 fw-bold text-start">
+                  <img src="images/icon.png" width="20px" alt=""> Full-Reserve Banking<br />
+                  <img src="images/icon.png" width="20px" alt=""> FDIC Insured Accounts<br />
+                  <img src="images/icon.png" width="20px" alt=""> 24/7 Customer Support<br />
+                  <img src="images/icon.png" width="20px" alt=""> Privacy Control<br />
+                  <img src="images/icon.png" width="20px" alt=""> Cash-back Rewards<br />
+                  <img src="images/icon.png" width="20px" alt=""> Next-to-zero Fees<br />
+                  <img src="images/icon.png" width="20px" alt=""> No Monthly Fees<br />
+                  <img src="images/icon.png" width="20px" alt=""> No Minimum Balance<br />
+                  <img src="images/icon.png" width="20px" alt=""> No Hidden WTF Fees<br />
+                  <img src="images/icon.png" width="20px" alt=""> No Attitude
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5 pb-3" id="info">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-8">
+              <div class="card">
+                <div class="d-flex img-container me-3">
+                  <img src="images/banking.png" alt="">
+                </div>
+                <div class="d-flex flex-column">
+                  <h2>Banking <br class="d-block d-md-none" /><span>built for you</span></h2>
+                  <p>
+                    CashCrossBorders is a borderless Lifestyle Banking App — one-stop
+                    financial mobile app that makes it
+                    easy for immigrants, digital nomads and entrepreneurs to do their banking in the U.S.A.
+                  </p>
+                  <p>The CashCrossBorders.com’s tailored fintech tools and multilingual customer-centric
+                    services will ensure that people who are about to move or who have already moved to the U.S. can
+                    seamlessly manage their global financial lives and enjoy the extra money saved by cutting bank fees.
+                  </p>
+                  <p>Easy to download and open an account — no monthly fees, no minimum balance,
+                    easy access from anywhere on any device.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-3" id="banking">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12">
+              <h2><span>Peace of mind with</span> <br class="d-block d-md-none" />full-reserve banking</h2>
+              <p class="fs-4">CashCrossBorders is a full reserve banking business,<br class="d-none d-md-block" /> we do
+                not use customer deposits for
+                lending and or
+                investments.</p>
+              <p class="fs-4">With CashCrossBorders, your money is always safe <br class="d-none d-md-block" />and
+                available for immediate withdrawal at
+                anytime.</p>
+              <p class="fs-4" style="color: #44449b;">Does your bank practice <b class="fw-bold">full-reserve</b> or <b
+                  class="fw-bold">fractional-reserve
+                </b>banking?</p>
+              <div class="d-flex justify-content-center">
+                <img src="images/banking_img.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="usecase">
+        <div class="container">
+          <div class="row g-4 d-flex align-items-end">
+            <div class="col-12 col-md-6">
+              <h2>Use Case</h2>
+              <p>
+                For most people living or working abroad to be juggling bank accounts, paying loads of fees, and
+                planning in advance which App to use for the next financial transactions is a common experience.
+              </p>
+              <p>For over 50 million U.S. immigrants, opening bank accounts and cost-effectively sending money to
+                another country can mean using multiple banking and payment apps.</p>
+              <p>CashCrossBorders.com changes all of that by eliminating the bank fees, stress, time and cost of
+                managing money across countries through fast and easy multi-lingual customer-centric banking services
+                tailored to the global lifestyle needs of students, nomads, workers and entrepreneurs — the underbanked
+                & unbanked.</p>
+              <p>CashCrossBorders.com offers the user full-control of the banking service — financial stability and
+                economic independence are within reach with the borderless mobile Lifestyle Banking App</p>
+              <p class="mb-0 pb-0">The CashCrossBorders.com Lifestyle Banking App will drive global economic opportunity
+                and
+                financial
+                inclusion by empowering a new generation of digital nomads and entrepreneurs with the fintech tools to
+                help start, scale and grow their businesses.</p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <img src="images/usecase_img.png" alt="...">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-5" id="services">
+        <div class="container">
+          <div class="row g-4 d-flex justify-content-center">
+            <div class="col-12 text-center">
+              <h2>Power your <span style="color: #44449b;">lifestyle</span> from anywhere</h2>
+              <p class="fs-4" style="color: #44449b;">Never step foot in a bank again with easy-to-use digital banking.
+              </p>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/service2.png" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <span>Smart</span> Personal Banking
+                  </h5>
+                  <p class="card-text fs-5">
+                    Manage your money, pay your bills,<br class="d-none d-md-block" /> send money to friends and family.
+                  </p>
+                  <img src="images/personal.jpg" class="card-img" alt="">
+                  <!-- <a href="#" class="btn btn-1">Get Your Personal Account</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="card">
+                <div class="img-container">
+                  <img src="images/service3.png" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <span>Smart</span> Business Banking
+                  </h5>
+                  <p class="card-text fs-5 d-none d-md-block">
+                    Manage your business with POS terminal<br class="d-none d-md-block" /> to accept payments
+                    on-the-go.
+                  </p>
+                  <p class="card-text fs-5 d-block d-md-none">
+                    Manage your business with POS<br class="d-none d-md-block" /> to accept payments
+                    on-the-go.
+                  </p>
+                  <img src="images/business.jpg" class="card-img" alt="">
+                  <!-- <a href="#" class="btn btn-1">Get Your Business Account</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <p class="fs-4" style="color: #44449b;">All CashCrossBorders Personal and Business Accounts are FDIC
+                insured up to $250,000 per account, <br class="d-none d-md-block" />and protected with world-class
+                cybersecurity.</p>
+              <p class="fs-4" style="color: #44449b;">All accounts are
+                regulated and include 24/7 compliance management tools and<br class="d-block d-md-none" /> customer
+                support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-1 pb-5" id="cta">
+        <div class="container">
+          <div class="row g-4 d-flex justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2><span>Banking</span> with confidence</h2>
+                  <img src="images/cta1.png" alt="">
+                  <h5>24/7 Customer Support</h5>
+                  <p>Get customer support from real people, ready to help.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="row g-3">
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/01_online_registration.svg" alt="">
+                      <h6>Apply Online</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/service1.png" alt="">
+                      <h6>Online Banking</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/02_Credit cards.svg" alt="">
+                      <h6>Cards & Loans</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/06_Rates and Fees.svg" alt="">
+                      <h6>Rates & Fees</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/04_LocateUs.svg" alt="">
+                      <h6>Help Centre</h6>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="icon_box d-flex flex-wrap">
+                    <a href="#" class="icon_item">
+                      <img src="images/05_ContactUs.svg" alt="">
+                      <h6>Customer Support</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="about">
+        <div class="container">
+          <div class="row g-4 d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-6 text-center">
+              <img src="images/about_img.png" alt="...">
+            </div>
+            <div class="col-12 col-md-6">
+              <h2>About</h2>
+              <p>With the innovation and drive of a fintech, CashCrossBorders Full Reserve Neo Banking Services is
+                built on top of the next-generation financial technology services infrastructure with the balance and
+                trust of our USA fully-licensed bank partners.
+              </p>
+              <p>We have partnered with the award-winning technology financial services organizations and
+                Banking-as-a-Service (“BaaS”) providers to offer a highly secure fully compliant (EU PSD2 and USA NIST
+                standards) customer-centric banking service with powerful-privacy at next-to-zero fees.</p>
+              <p>CashCrossBorders is rewriting the playbook for mobile banking with a beautifully simple banking app
+                enabling fast access to money and financial service features that reward.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="rewards">
+        <div class="container">
+          <div class="row g-4 d-flex align-items-center">
+            <div class="col-12 col-md-6">
+              <h2>Banking that <span>Rewards</span> for making an impact</h2>
+              <p class="fs-4" style="color: #44449b;">Our customers get to decide if they want to help save the Amazon,
+                help the less
+                fortunate in the world,
+                help the local community, or help the planet.</p>
+              <p>We are working with market leading partners and retailers to offer added features such as, the
+                <b>CashCrossBorders Lifestyle Banking App</b> has cash-back features that enables the customer to turn
+                their daily spending into a force for good.
+              </p>
+              <p>The borderless mobile <b>Lifestyle Banking App</b> turns the cash-back received from our customers
+                spending into charitable donations and direct them to causes important to the customer, meaning our
+                customers can do good in the world without having to cost them a dollar.</p>
+              <p><b>CashCrossBorders</b> is a inclusive seamless one-stop mobile digital banking experience
+                that eliminates stress, time and fees — <b>banking that rewards.</b></p>
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="images/rewards_img2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="news">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 text-center">
+              <h2>Banking <span>News</span></h2>
+              <div class="fs-4" style="color: #44449b;">A legacy to be disrupted.</div>
+            </div>
+            <div class="col-12">
+              <div class="owl-carousel owl-theme" id="news-carousel">
+                <div class="item">
+                  <a href="https://www.forbes.com/sites/forbestechcouncil/2023/11/14/neobanks-democratizing-financial-services-for-the-underbanked/?sh=593ecca2838a"
+                    target="_blank">
+                    <img
+                      src="https://imageio.forbes.com/specials-images/imageserve/6092a2d54d48008db59d4448//960x0.jpg?format=jpg&width=1440"
+                      alt="">
+                    <h5>NeoBanks: Democratizing Financial Services</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.usnews.com/banking/articles/what-is-a-neobank" target="_blank">
+                    <img
+                      src="https://www.usnews.com/object/image/0000017b-98e0-dac6-abfb-99e8c2120000/210830neobank-stock.jpg?update-time=1630357521939&size=responsive970"
+                      alt="">
+                    <h5>What Is A<br class="d-none d-md-block" /> Neo Bank?</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.reuters.com/markets/us/regional-banks-face-big-hurdles-year-after-svb-collapse-2024-03-07/"
+                    target="_blank">
+                    <img
+                      src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/SQXJSSEACJN3DJ7SBD6IT4WISM.jpg"
+                      alt="">
+                    <h5>Regional Banks face challenges in 2024</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.thenationalnews.com/business/banking/2024/03/05/imf-warns-of-new-banking-crisis-year-after-silicon-valley-bank-collapse/"
+                    target="_blank">
+                    <img
+                      src="https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/v2/KYAZWB4SCRB7HIBTQ5LXW4CLEY.jpg?smart=true&auth=d3e5dc3fc9da55ff372dbbf757ae3e3f7dbe9d5e87409f986ac43be192ce9ac4&width=1000&height=665"
+                      alt="">
+                    <h5>IMF warns of new USA banking crisis for 2024</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://som.yale.edu/story/2023/2023-banking-crisis-lessons-about-bail" target="_blank">
+                    <img src="images/banking-crisis.jpg" alt="">
+                    <h5>2023 Banking Crisis: Lessons about Bail-in</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://siepr.stanford.edu/publications/policy-brief/fragile-why-more-us-banks-are-risk-run"
+                    target="_blank">
+                    <img
+                      src="https://siepr.stanford.edu/sites/g/files/sbiybj16606/files/styles/responsive_large/public/media/image/fragile-why-more-us-banks-are-at-risk-of-a-run.png.webp?itok=1OrLj3R_"
+                      alt="">
+                    <h5>Why more US Banks are at risk of a run</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.bloomberg.com/news/articles/2024-03-07/fdic-says-problem-bank-list-grew-by-8-lenders-last-quarter"
+                    target="_blank">
+                    <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ihlolGZLHWwc/v3/620x-1.jpg" alt="">
+                    <h5>US Bank Risk List<br class="d-none d-md-block" /> Grows</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.marketwatch.com/guides/banking/list-of-failed-banks/" target="_blank">
+                    <img
+                      src="https://d2tez01fe91909.cloudfront.net/wp-content/uploads/2024/01/AdobeStock_63621795-scaled.jpeg.webp"
+                      alt="">
+                    <h5>History of US Bank<br class="d-none d-md-block" /> Failures</h5>
+                    <div class="d-flex">
+                      <a class="btn btn-sm btn-1">Tap to read</a>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="founder">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-6">
+              <h2>Founders <span>comment</span></h2>
+              <i class="fas fa-quote-left fa-2x my-2"></i>
+              <p>
+                BULLIONBLOCK LLC is excited to announce the launch of CashCrossBorders - Full Reserve Neo Banking
+                solution founded to serve the US personal banking service needs as well as SMEs<br
+                  class="d-none d-md-block" /> and innovative startups.
+              </p>
+              <p>Since pre-Covid we have been developing a full-reserve fintech neo banking business model to address
+                the dysfunctional banking sector.</p>
+              <p class="mb-0">CashCrossBorders always holds 100% of customers’ deposits available for withdrawal at
+                anytime.</p>
+              <i class="fas fa-quote-right fa-2x my-2"></i>
+              <h5>Michael Haykal</h5>
+              <span>Founder and CFO</span>
+              <div class="mb-1"></div>
+              <span>BULLIONBLOCK LLC | CashCrossBorders</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" id="contact">
+        <div class="container">
+          <div class="row g-4 d-flex flex-md-row flex-column-reverse">
+            <div class="col-12 d-block d-md-none">
+              <p>Leave a comment - join our mail-list and stay up to date with our
+                launch.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <form action="submit_feedform.php" method="post">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <input type="text" class="form-control" name="pname" placeholder="Name" required />
+                      </div>
+                      <div class="col-12">
+                        <input type="email" class="form-control" name="pemail" placeholder="Email Address" required />
+                      </div>
+                      <div class="col-12">
+                        <input type="text" class="form-control" name="pcity" placeholder="City" required />
+                      </div>
+                      <div class="col-12">
+                        <input type="text" class="form-control" name="pcountry" placeholder="Country" required />
+                      </div>
+                      <div class="col-12">
+                        <textarea class="form-control" placeholder="Message" name="message" rows="4"
+                          required></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-1">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <h2>Help us build the <br class="d-none d-md-block" /> <span>banking you want</span></h2>
+              <p class="d-none d-md-block">Leave a comment - join our mail-list and stay up to date with our
+                launch.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="py-2 py-md-3 page-footer d-none d-md-block" id="desktop_footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-12 text-center">
+            <img src="./images/logo.png" height="50px" alt="Footer" />
+            <div style="color: #c70bf9;">- USA launch in 2025 -</div>
+          </div>
+          <div class="col-12 col-md-12 text-center">
+            <small style="font-size: 15px;">CashCrossBorders | BULLIONBLOCK LLC is a fintech company, with banking
+              services provided by our USA
+              FDIC member Bank partners.</small>
+          </div>
+          <div class="col-12 text-center">
+            <a data-bs-toggle="popover" data-bs-title="Launching Soon"><small style="font-size: 15px;">Terms |
+                Privacy</small></a>
+          </div>
+          <div class="col-12 text-center">
+            <small style="font-size: 13px;">© 2024 CashCrossBorders | BULLIONBLOCK LLC. All Rights Reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="py-2 py-md-3 page-footer d-block d-md-none" id="mobile_footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-12 text-center">
+            <img src="./images/logo.png" height="50px" alt="Footer" />
+            <div style="color: #c70bf9;">- Website Under Construction -</div>
+          </div>
+          <div class="col-12 col-md-12 text-center">
+            <small style="font-size: 15px;">CashCrossBorders | BULLIONBLOCK LLC is a fintech company, with banking services provided by our USA
+              FDIC member Bank partners.</small>
+          </div>
+          <div class="col-12 text-center">
+            <a data-bs-toggle="popover" data-bs-title="Launching Soon"><small style="font-size: 15px;">Terms | Privacy</small></a>
+          </div>
+          <div class="col-12 text-center">
+            <small style="font-size: 13px;">© 2024 CashCrossBorders | BULLIONBLOCK LLC.<br/>All Rights Reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  <script src="main.js"></script>
+  <!-- <script>
+    window.addEventListener(
+      "contextmenu",
+      function (t) {
+        t.preventDefault();
+      },
+      !1
+    ),
+      (document.onkeydown = function (t) {
+        return (
+          123 != event.keyCode &&
+          (!t.ctrlKey || !t.shiftKey || t.keyCode != "I".charCodeAt(0)) &&
+          (!t.ctrlKey || !t.shiftKey || t.keyCode != "C".charCodeAt(0)) &&
+          (!t.ctrlKey || !t.shiftKey || t.keyCode != "J".charCodeAt(0)) &&
+          (!t.ctrlKey || t.keyCode != "U".charCodeAt(0)) &&
+          void 0
+        );
+      });
+  </script> -->
+</body>
+
+</html>
